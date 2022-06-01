@@ -1,0 +1,22 @@
+CREATE TABLE courses (
+    id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    course_code varchar(255),
+    course_title varchar(255)
+)
+
+CREATE TABLE sections (
+    id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    section_name varchar(255)  
+)
+
+CREATE TABLE sessions (
+    id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    session_name varchar(255)  
+)
+
+CREATE TABLE teachers (
+    id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    teams_name varchar(255),
+    teacher_email varchar(255),
+    teacher_phone int(11)
+)
