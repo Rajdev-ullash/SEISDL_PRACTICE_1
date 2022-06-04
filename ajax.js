@@ -47,17 +47,20 @@ $(document).ready(function () {
       method: "POST",
       data: JSON.stringify(course_data),
       success: function (data) {
-        //   showdata();
+        // showdata();
+        console.log(data);
         if (data == 1) {
+          showdata();
+          console.log(showdata());
           $("#exampleModal").modal("hide");
           alertify.set("notifier", "position", "top-right");
           alertify.success("Course added successfully");
-          $("#myform")[0].reset();
-          showdata();
         } else {
           alertify.set("notifier", "position", "top-right");
           alertify.success(data);
         }
+        showdata();
+        console.log(showdata());
       },
     });
   });

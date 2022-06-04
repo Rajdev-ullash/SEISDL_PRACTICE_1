@@ -39,6 +39,8 @@ $(document).ready(function () {
 
     console.log(section_name);
 
+    
+
     var section_data = { section_name: section_name };
     $.ajax({
       url: "section_add.php",
